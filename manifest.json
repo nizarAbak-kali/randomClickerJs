@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Random Checkbox and Radio Checker",
+    "version": "1.0",
+    "description": "Randomly checks or unchecks all checkboxes and radio buttons on the current page.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content_script.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html",
+      "default_title": "Click to activate"
+    }
+  }
+  
